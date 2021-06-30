@@ -1,0 +1,60 @@
+h2{
+    text-align: center;
+    font-size: x-large;
+    color: white;
+}
+body{
+    background-color: #33135c;
+}
+.App{
+    background-color: #e847ae;
+    min-height: 500px;
+    width: 450px;
+    margin: 100px auto;
+}
+input[type='text']{
+    background-color: #ffb3fd;
+    height: 40px;
+    margin: 50px;
+    width: 200px;
+    padding: 10px;
+    border: 0;
+    font-size:x-large;
+    border-radius: 15px;
+    color: black;
+}
+
+.to-do-form::placeholder{
+    color:crimson;
+}
+.to-do-form :focus{
+    outline: none;
+}
+.to-do-form button{
+    height: 70px;
+    width: 80px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    background-color: #04005e;
+    color: cornsilk;
+    cursor: pointer;
+}
+
+.itemlist{
+    background-color: #535eeb;
+    height: 50px;
+    margin: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    
+    color: cornsilk;
+}
+.itemlist p{
+    padding: 10px;
+}
+.faicons{
+    position: relative;
+    left: 310px;
+    cursor: pointer;
+}
