@@ -8,15 +8,19 @@ function listitem(props) {
     const listitems = items.map(item=>{
         return <div className="itemlist" key={item.key}>
         
-        <p>
-        {item.text}
-        <span>
-                <FontAwesomeIcon
-                 className="faicons" 
-                 icon="trash"
-                 onClick={()=>props.deleteItem(item.key)}/>
-           </span>
-        </p>
+        
+                    <div>
+                        {item.text}
+                    </div>
+       
+        <div>
+               <FontAwesomeIcon
+                  className="faicons" 
+                  icon="trash"
+              onClick={()=>props.deleteItem(item.key)}/>
+
+           </div>
+   
         </div>
     })
     return (
