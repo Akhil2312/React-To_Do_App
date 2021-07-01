@@ -8,9 +8,10 @@ body{
 }
 .App{
     background-color: #e847ae;
-    min-height: 500px;
+    height: 500px;
     width: 450px;
     margin: 100px auto;
+    overflow-y:scroll;
 }
 input[type='text']{
     background-color: #ffb3fd;
@@ -24,9 +25,19 @@ input[type='text']{
     color: black;
 }
 
-.to-do-form::placeholder{
-    color:crimson;
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: pink;
+  }
+
+.scroll-form{
+    display: flex;
+    flex-direction: column;
+   
+
 }
+
+
+
 .to-do-form :focus{
     outline: none;
 }
@@ -39,6 +50,7 @@ input[type='text']{
     background-color: #04005e;
     color: cornsilk;
     cursor: pointer;
+
 }
 
 .itemlist{
@@ -47,14 +59,18 @@ input[type='text']{
     margin: 20px;
     border-radius: 5px;
     font-size: 20px;
-    
+    display: flex;
     color: cornsilk;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.2rem;
+    
+   
 }
-.itemlist p{
-    padding: 10px;
-}
+ 
+
 .faicons{
-    position: relative;
-    left: 310px;
+    
     cursor: pointer;
-}
+} 
